@@ -685,3 +685,4 @@ Processing by SongsController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 6]]
   Rendered songs/index.html.erb within layouts/application (238.9ms)
 Completed 200 OK in 269ms (Views: 261.0ms | ActiveRecord: 1.4ms)
+  [1m[36mSong Load (0.2ms)[0m  [1mSELECT  "songs".* FROM "songs" WHERE (album_cover_file_name IS NOT NULL)  ORDER BY "songs"."id" ASC LIMIT 1000[0m
